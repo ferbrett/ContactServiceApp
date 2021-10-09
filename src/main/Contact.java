@@ -70,23 +70,23 @@ public class Contact {
 		updateAddress(address);
 	}
 	
-	private final String getContactId() {
+	public final String getContactId() {
 		return contactId;
 	}
 	
-	private final String getFirstName() {
+	public final String getFirstName() {
 		return firstName;
 	}
 	
-	private final String getLastName() {
+	public final String getLastName() {
 		return lastName;
 	}
 	
-	private final String getPhoneNumber() {
+	public final String getPhoneNumber() {
 		return phoneNumber;
 	}
 	
-	private final String getAddress() {
+	public final String getAddress() {
 		return address;
 	}
 	
