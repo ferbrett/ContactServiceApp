@@ -12,7 +12,7 @@ public class Contact {
 	private static final byte CONTACT_ADDRESS_LENGTH = 30;
 	
 	private static final String INITIALIZER = "INITIAL";
-	private static final String INITIALIZER_NUM = "1235559999";
+	public static final String INITIALIZER_NUM = "1235559999";
 	
 	private String contactId;
 	private String firstName;
@@ -20,7 +20,7 @@ public class Contact {
 	private String phoneNumber;
 	private String address;
 	
-	Contact() {
+	public Contact() {
 		this.contactId = INITIALIZER;
 		this.firstName = INITIALIZER;
 		this.lastName = INITIALIZER;
@@ -28,7 +28,7 @@ public class Contact {
 		this.address = INITIALIZER;
 	}
 	
-	Contact(String contactId) {
+	public Contact(String contactId) {
 		updateContactId(contactId);
 		this.firstName = INITIALIZER;
 		this.lastName = INITIALIZER;
@@ -36,7 +36,7 @@ public class Contact {
 		this.address = INITIALIZER;
 	}
 	
-	Contact(String contactId, String firstName) {
+	public Contact(String contactId, String firstName) {
 		updateContactId(contactId);
 		updateFirstName(firstName);
 		this.lastName = INITIALIZER;
@@ -44,7 +44,7 @@ public class Contact {
 		this.address = INITIALIZER;
 	}
 	
-	Contact(String contactId, String firstName, String lastName) {
+	public Contact(String contactId, String firstName, String lastName) {
 		updateContactId(contactId);
 		updateFirstName(firstName);
 		updateLastName(lastName);
@@ -52,7 +52,7 @@ public class Contact {
 		this.address = INITIALIZER;
 	}
 	
-	Contact(String contactId, String firstName, String lastName,
+	public Contact(String contactId, String firstName, String lastName,
 			String phoneNumber) {
 		updateContactId(contactId);
 		updateFirstName(firstName);
@@ -61,7 +61,7 @@ public class Contact {
 		this.address = INITIALIZER;
 	}
 	
-	Contact(String contactId, String firstName, String lastName,
+	public Contact(String contactId, String firstName, String lastName,
 			String phoneNumber, String address) {
 		updateContactId(contactId);
 		updateFirstName(firstName);
@@ -90,7 +90,7 @@ public class Contact {
 		return address;
 	}
 	
-	protected void updateFirstName(String firstName) {
+	public void updateFirstName(String firstName) {
 		if (firstName == null) {
 			throw new IllegalArgumentException("First name can't be empty.");
 		} else if (firstName.length() > CONTACT_FIRSTNAME_LENGTH) {
@@ -101,7 +101,7 @@ public class Contact {
 		}
 	}
 	
-	protected void updateLastName(String lastName) {
+	public void updateLastName(String lastName) {
 		if (lastName == null) {
 			throw new IllegalArgumentException("Last name can't be empty.");
 		} else if (lastName.length() > CONTACT_LASTNAME_LENGTH) {
@@ -112,7 +112,7 @@ public class Contact {
 		}
 	}
 	
-	protected void updatePhoneNumber(String phoneNumber) {
+	public void updatePhoneNumber(String phoneNumber) {
 		String allowed = "[0-9]+";
 		if (phoneNumber == null) {
 			throw new IllegalArgumentException("Phone number can't be empty.");
@@ -128,7 +128,7 @@ public class Contact {
 		}
 	}
 	
-	protected void updateAddress(String address) {
+	public void updateAddress(String address) {
 		if (address == null) {
 			throw new IllegalArgumentException("Address can't be empty.");
 		} else if (address.length() > CONTACT_ADDRESS_LENGTH) {
@@ -140,7 +140,7 @@ public class Contact {
 		}
 	}
 	
-	protected void updateContactId(String contactId) {
+	public void updateContactId(String contactId) {
 		if (contactId == null) {
 			throw new IllegalArgumentException("Contact ID can't be empty.");
 		} else if (address.length() > CONTACT_ID_LENGTH) {

@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class ContactService {
 
-	private String uniqueId;
+	public String uniqueId;
 	private List<Contact> contactList = new ArrayList<>();
 	
 	{
