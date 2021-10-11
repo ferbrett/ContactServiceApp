@@ -16,17 +16,17 @@ public class ContactServiceTest {
 	
 	@BeforeEach
 	void setup() {
-		contactId = "1029F847A6";
-		firstNameTest = "John";
-		lastNameTest = "Doe";
-		phoneNumberTest = "5554441234";
-		addressTest = "220 Main St Peoria IL 61523";
-		tooLongContactId = "112233445566778899";
-		tooLongFirstName = "John James Jacob";
-		tooLongLastName = "Doe West Michaels";
-		tooLongPhoneNumber = "77712341234";
+		contactId           = "1029F847A6";
+		firstNameTest       = "John";
+		lastNameTest        = "Doe";
+		phoneNumberTest     = "5554441234";
+		addressTest         = "220 Main St Peoria IL 61523";
+		tooLongContactId    = "112233445566778899";
+		tooLongFirstName    = "John James Jacob";
+		tooLongLastName     = "Doe West Michaels";
+		tooLongPhoneNumber  = "77712341234";
 		tooShortPhoneNumber = "1234567";
-		tooLongAddress = "11021 Second St Chicago, IL 66062";
+		tooLongAddress      = "11021 Second St Chicago, IL 66062";
 	}
 	
 	@Test
