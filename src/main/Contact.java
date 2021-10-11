@@ -6,12 +6,12 @@ public class Contact {
 	 * Reusable constant/variable declarations/initializations
 	 */
 	private static final int CONTACT_PHONENUMBER_LENGTH = 10;
-	private static final byte CONTACT_ID_LENGTH = 10;
-	private static final byte CONTACT_FIRSTNAME_LENGTH = 10;
-	private static final byte CONTACT_LASTNAME_LENGTH = 10;
-	private static final byte CONTACT_ADDRESS_LENGTH = 30;
+	private static final byte CONTACT_ID_LENGTH         = 10;
+	private static final byte CONTACT_FIRSTNAME_LENGTH  = 10;
+	private static final byte CONTACT_LASTNAME_LENGTH   = 10;
+	private static final byte CONTACT_ADDRESS_LENGTH    = 30;
 	
-	private static final String INITIALIZER = "INITIAL";
+	private static final String INITIALIZER    = "INITIAL";
 	public static final String INITIALIZER_NUM = "1235559999";
 	
 	private String contactId;
@@ -21,27 +21,27 @@ public class Contact {
 	private String address;
 	
 	public Contact() {
-		this.contactId = INITIALIZER;
-		this.firstName = INITIALIZER;
-		this.lastName = INITIALIZER;
+		this.contactId   = INITIALIZER;
+		this.firstName   = INITIALIZER;
+		this.lastName    = INITIALIZER;
 		this.phoneNumber = INITIALIZER;
-		this.address = INITIALIZER;
+		this.address     = INITIALIZER;
 	}
 	
 	public Contact(String contactId) {
 		updateContactId(contactId);
-		this.firstName = INITIALIZER;
-		this.lastName = INITIALIZER;
+		this.firstName   = INITIALIZER;
+		this.lastName    = INITIALIZER;
 		this.phoneNumber = INITIALIZER;
-		this.address = INITIALIZER;
+		this.address     = INITIALIZER;
 	}
 	
 	public Contact(String contactId, String firstName) {
 		updateContactId(contactId);
 		updateFirstName(firstName);
-		this.lastName = INITIALIZER;
+		this.lastName    = INITIALIZER;
 		this.phoneNumber = INITIALIZER;
-		this.address = INITIALIZER;
+		this.address     = INITIALIZER;
 	}
 	
 	public Contact(String contactId, String firstName, String lastName) {
@@ -49,7 +49,7 @@ public class Contact {
 		updateFirstName(firstName);
 		updateLastName(lastName);
 		this.phoneNumber = INITIALIZER;
-		this.address = INITIALIZER;
+		this.address     = INITIALIZER;
 	}
 	
 	public Contact(String contactId, String firstName, String lastName,
