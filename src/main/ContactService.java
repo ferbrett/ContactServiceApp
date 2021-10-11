@@ -7,7 +7,7 @@ import java.util.UUID;
 public class ContactService {
 
 	public String uniqueId;
-	private List<Contact> contactList = new ArrayList<>();
+	public List<Contact> contactList = new ArrayList<>();
 	
 	{
 		uniqueId = UUID.randomUUID().toString().substring(
@@ -62,16 +62,16 @@ public class ContactService {
 		searchForContact(id).updateAddress(address);
 	}
 	
-	protected List<Contact> getContactList() {
+	public List<Contact> getContactList() {
 		return contactList;
 	}
 	
-	private String newUniqueId() {
+	public String newUniqueId() {
 		return uniqueId = UUID.randomUUID().toString().substring(
 				0, Math.min(toString().length(), 10));
 	}
 	
-	private Contact searchForContact(String id) throws Exception {
+	public Contact searchForContact(String id) throws Exception {
 		int index = 0;
 		while (index < contactList.size()) {
 			if (id.equals(contactList.get(index).getContactId())) {
