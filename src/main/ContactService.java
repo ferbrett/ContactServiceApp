@@ -14,6 +14,9 @@ public class ContactService {
 				0, Math.min(toString().length(), 10));
 	}
 	
+	/*
+	 * Create new Contact objects
+	 */
 	public void newContact() {
 		Contact contact = new Contact(newUniqueId());
 		contactList.add(contact);
@@ -42,6 +45,9 @@ public class ContactService {
 		contactList.add(contact);
 	}
 	
+	/*
+	 * Update Contact objects
+	 */
 	public void deleteContact(String id) throws Exception {
 		contactList.remove(searchForContact(id));
 	}

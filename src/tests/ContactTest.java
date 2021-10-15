@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import main.Contact;
 
-public class ContactTest {
+public class ContactTest { 
 
 	protected String contactId, firstNameTest, lastNameTest, phoneNumberTest,
 		addressTest;
@@ -15,7 +15,7 @@ public class ContactTest {
 		tooLongPhoneNumber, tooShortPhoneNumber, tooLongAddress;
 	
 	/*
-	 * Try some test data entries as test material for the Contact.java class.
+	 * Setup conditions
 	 */
 	@BeforeEach
 	void setup() {

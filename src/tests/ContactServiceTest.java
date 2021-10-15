@@ -14,6 +14,9 @@ public class ContactServiceTest {
 	protected String tooLongContactId, tooLongFirstName, tooLongLastName,
 		tooLongPhoneNumber, tooShortPhoneNumber, tooLongAddress;
 	
+	/*
+	 * Setup conditions
+	 */
 	@BeforeEach
 	void setup() {
 		contactId           = "1029F847A6";

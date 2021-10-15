@@ -20,6 +20,9 @@ public class Contact {
 	private String phoneNumber;
 	private String address;
 	
+	/*
+	 * Create Contact objects.
+	 */
 	public Contact() {
 		this.contactId   = INITIALIZER;
 		this.firstName   = INITIALIZER;
@@ -70,6 +73,9 @@ public class Contact {
 		updateAddress(address);
 	}
 	
+	/*
+	 * Get information about each contact
+	 */
 	public final String getContactId() {
 		return contactId;
 	}
@@ -90,6 +96,9 @@ public class Contact {
 		return address;
 	}
 	
+	/*
+	 * Add update functionality
+	 */
 	public void updateFirstName(String firstName) {
 		if (firstName == null) {
 			throw new IllegalArgumentException("First name can't be empty.");
